@@ -1,0 +1,24 @@
+{
+  "name": "privacy-vision-agent-extension",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Chrome MV3 foundation for a privacy-preserving browser agent extension.",
+  "type": "module",
+  "scripts": {
+    "build": "tsc --noEmit --project tsconfig.json && node scripts/build.mjs",
+    "clean": "node scripts/clean.mjs",
+    "start:backend": "node dist-backend/server.js",
+    "test": "npm run build && node --test tests/*.test.mjs"
+  },
+  "devDependencies": {
+    "@types/node": "^26.5.1",
+    "esbuild": "^0.28.2",
+    "jsdom": "^29.1.1",
+    "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "onnxruntime-web": "^1.29.0",
+    "tesseract.js": "^7.0.0",
+    "tldts": "^7.4.19"
+  }
+}
