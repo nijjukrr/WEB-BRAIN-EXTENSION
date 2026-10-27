@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Privacy Vision Agent Foundation",
+  "description": "Chrome extension foundation for local page analysis plumbing.",
+  "version": "0.1.0",
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Privacy Vision Agent"
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "permissions": ["activeTab", "scripting"]
+}
